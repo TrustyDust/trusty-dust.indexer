@@ -7,7 +7,7 @@ import { ContentAbi } from "@abis/ContentAbi"
 import { JobsAbi } from "@abis/JobsAbi"
 import { VerifierAbi } from "@abis/VerifierAbi"
 
-const START_BLOCK = 34_205_941
+const START_BLOCK = 34205941
 
 export default createConfig({
   database: {
