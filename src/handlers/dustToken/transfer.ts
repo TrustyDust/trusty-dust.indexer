@@ -1,16 +1,17 @@
 import { ponder } from "ponder:registry"
-import { dustTransfers } from "ponder:schema"
+import { dusttoken_transfer } from "ponder:schema"
 
 ponder.on("DustToken:Transfer", async ({ event, context }) => {
   const { from, to, value } = event.args
 
-  await context.db.insert(dustTransfers).values({
+  await context.db.insert(dusttoken_transfer).values({
     id: `${event.transaction.hash}-${event.log.logIndex}`,
     from,
     to,
-    amount: value,
+    value,
     blockNumber: event.block.number,
     timestamp: event.block.timestamp,
     transactionHash: event.transaction.hash,
   })
 })
+

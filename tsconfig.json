@@ -18,6 +18,13 @@
     "lib": ["ES2022"],
     "target": "ES2022",
 
+    // Path aliases
+    "baseUrl": ".",
+    "paths": {
+      "@abis/*": ["src/abis/*"],
+      "@handlers/*": ["src/handlers/*"]
+    },
+
     // Skip type checking for node modules
     "skipLibCheck": true
   },
