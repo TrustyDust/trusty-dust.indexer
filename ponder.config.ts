@@ -9,6 +9,9 @@ import { JobsAbi } from "./src/abis/JobsAbi"
 import { VerifierAbi } from "./src/abis/VerifierAbi"
 
 export default createConfig({
+  database: {
+    kind: "postgres",
+  },
   chains: {
     lisk: {
       id: 4202,

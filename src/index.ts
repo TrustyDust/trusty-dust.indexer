@@ -1,20 +1,27 @@
-import { ponder } from "ponder:registry";
+// DustToken
+import "./handlers/dust/Transfer"
 
-import "./handlers/dust/Transfer";
-import "./handlers/trustcore/TrustScoreUpdated";
-import "./handlers/trustcore/TierUpdated";
-import "./handlers/trustcore/RewardDistributed";
-import "./handlers/trustcore/PenaltyApplied";
+// Identity
+import "./handlers/identity/IdentityRegistered"
 
-import "./handlers/postcontentnft/PostMinted";
-import "./handlers/postcontentnft/PostUpdated";
-import "./handlers/postcontentnft/PostBurned";
+// TrustCore
+import "./handlers/trustcore/TrustScoreUpdated"
+import "./handlers/trustcore/TierUpdated"
+import "./handlers/trustcore/RewardDistributed"
+import "./handlers/trustcore/PenaltyApplied"
 
-import "./handlers/jobmarketplace/JobCreated";
-import "./handlers/jobmarketplace/JobApplied";
-import "./handlers/jobmarketplace/JobSelected";
-import "./handlers/jobmarketplace/JobSubmitted";
-import "./handlers/jobmarketplace/JobCompleted";
+// Post NFT
+import "./handlers/postcontentnft/PostMinted"
+import "./handlers/postcontentnft/PostUpdated"
+import "./handlers/postcontentnft/PostBurned"
 
-import "./handlers/verifier/ProofSubmitted";
-import "./handlers/verifier/TierVerified";
+// Job Marketplace
+import "./handlers/jobmarketplace/JobCreated"
+import "./handlers/jobmarketplace/JobApplied"
+import "./handlers/jobmarketplace/JobSelected"
+import "./handlers/jobmarketplace/JobSubmitted"
+import "./handlers/jobmarketplace/JobCompleted"
+
+// ZK Verifier
+import "./handlers/verifier/ProofSubmitted"
+import "./handlers/verifier/TierVerified"
