@@ -7,7 +7,7 @@ ponder.on("Core:JobRewarded", async ({ event, context }) => {
   await context.db.insert(core_job_rewarded).values({
     id: `${event.transaction.hash}-${event.log.logIndex}`,
     user,
-    rating,
+    rating: BigInt(rating),
     amount,
     blockNumber: event.block.number,
     timestamp: event.block.timestamp,

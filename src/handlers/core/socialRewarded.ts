@@ -7,7 +7,7 @@ ponder.on("Core:SocialRewarded", async ({ event, context }) => {
   await context.db.insert(core_social_rewarded).values({
     id: `${event.transaction.hash}-${event.log.logIndex}`,
     user,
-    action,
+    action: BigInt(action),
     amount,
     blockNumber: event.block.number,
     timestamp: event.block.timestamp,

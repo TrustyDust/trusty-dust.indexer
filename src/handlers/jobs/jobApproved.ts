@@ -8,7 +8,7 @@ ponder.on("Jobs:JobApproved", async ({ event, context }) => {
     id: `${event.transaction.hash}-${event.log.logIndex}`,
     jobId,
     worker,
-    rating,
+    rating: BigInt(rating),
     rewardAmount,
     blockNumber: event.block.number,
     timestamp: event.block.timestamp,
