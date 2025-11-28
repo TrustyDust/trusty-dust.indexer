@@ -1,0 +1,10 @@
+{
+    "build": {
+      "installCommand": "npm install",
+      "buildCommand": "echo 'no build required'"
+    },
+    "run": {
+      "startupCommand": "npx ponder start --log-level=info"
+    }
+  }
+  
